@@ -20,6 +20,7 @@ Some useful utilities for CV and DL helpers.
 
 
 - *Demo3*: FIt-SNE/test_tSNE_pt.py
+On windows, call bin/fitsne.exe through. Py script. 
 ![image](__illus/tSNE_high_res.png)
 
 

@@ -1,0 +1,31 @@
+来自
+C:\lib\opencv_selfbuild\opencv-3.4.2\samples\cpp
+的imagelist_creator && calibration.cpp
+棋盘格、圆圈格 在同级目录下
+参考
+https://blog.csdn.net/xiangxianghehe/article/details/78807920
+报错：
+'localtime': This function or variable may be unsafe. 
+Consider using localtime_s instead. 
+To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+解决：
+在开始#define _CRT_SECURE_NO_WARNINGS
+part1_imagelist samples_imglist.yaml ^
+left01.jpg left02.jpg left03.jpg left04.jpg left05.jpg ^
+left06.jpg left07.jpg left08.jpg left09.jpg ^
+left11.jpg left12.jpg left13.jpg left14.jpg ^
+right01.jpg right02.jpg right03.jpg right04.jpg right05.jpg ^
+right06.jpg right07.jpg right08.jpg right09.jpg ^
+right11.jpg right12.jpg right13.jpg right14.jpg
+
+将会生成 samples_imglist.yml 文件
+
+
+part2_calibration samples_imglist.yaml ^
+left01.jpg left02.jpg left03.jpg left04.jpg left05.jpg ^
+left06.jpg left07.jpg left08.jpg left09.jpg ^
+left11.jpg left12.jpg left13.jpgleft14.jpg ^
+right01.jpg right02.jpg right03.jpg right04.jpg right05.jpg ^
+right06.jpg right07.jpg right08.jpg right09.jpg ^
+right11.jpg right12.jpg right13.jpg right14.jpg -w=6 -h=7
+

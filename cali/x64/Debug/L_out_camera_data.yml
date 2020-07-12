@@ -1,0 +1,29 @@
+%YAML:1.0
+---
+calibration_time: "Wed Jul 24 23:24:08 2019"
+# image and ChessBoard Info
+image_width: 800 
+image_height: 600
+board_width: 5
+board_height: 7
+square_size: 1.
+aspectRatio: 1.
+flags: 2
+# intrinsic K of camera
+camera_matrix: !!opencv-matrix
+   rows: 3
+   cols: 3
+   dt: d
+   data: [ 9.4698812010491042e+02, 0., 5.1639518542475344e+02, 0.,
+       9.4698812010491042e+02, 2.7610717220525885e+02, 0., 0., 1. ]
+
+# 畸变系数
+distortion_coefficients: !!opencv-matrix
+   rows: 5
+   cols: 1
+   dt: d
+   data: [ 2.0571992681095969e-01, 3.6569309430045144e-01,
+       -1.4922068504879089e-03, 7.7943477724307528e-02,
+       -1.3166372141269962e+00 ]
+# 平均重投影误差RMS
+avg_reprojection_error: 5.7562801578566125e-01
